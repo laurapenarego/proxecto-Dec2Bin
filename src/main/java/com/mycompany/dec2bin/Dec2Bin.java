@@ -10,8 +10,8 @@ package com.mycompany.dec2bin;
  * @author laura
  */
 public class Dec2Bin{
-    public static void main(String[] args[]){
-       int decimal = 252222;
+    public static void main(String[] args){
+       int decimal = 8;
        String binario = obterBinario(decimal);
        System.out.println(binario);   
     }
@@ -21,7 +21,7 @@ public class Dec2Bin{
         while ( decimal > 0 ) {
            int binarioInt = decimal % 2;
             decimal /= 2;
-            binario = binario + (binarioInt + "");
+            binario = (binarioInt + "")+ binario;
             
         }
         return binario;

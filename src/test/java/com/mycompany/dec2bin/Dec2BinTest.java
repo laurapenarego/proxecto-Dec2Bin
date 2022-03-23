@@ -20,33 +20,7 @@ public class Dec2BinTest {
     public Dec2BinTest() {
     }
     
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
-
-    /**
-     * Test of main method, of class Dec2Bin.
-     */
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Dec2Bin.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+ 
 
     /**
      * Test of obterBinario method, of class Dec2Bin.
@@ -54,8 +28,26 @@ public class Dec2BinTest {
     @Test
     public void testObterBinario() {
         System.out.println("obterBinario");
-        int decimal = 2;
-        String expResult = "10";
+        int decimal = 8;
+        String expResult = "1000";
+        String result = Dec2Bin.obterBinario(decimal);
+        assertEquals(expResult, result);
+       
+    }
+     @Test
+    public void testObterBinario0() {
+        System.out.println("obterBinario");
+        int decimal = 0;
+        String expResult = "";
+        String result = Dec2Bin.obterBinario(decimal);
+        assertEquals(expResult, result);
+       
+    }
+     @Test
+    public void testObterBinario12() {
+        System.out.println("obterBinario");
+        int decimal = 12;
+        String expResult = "1100";
         String result = Dec2Bin.obterBinario(decimal);
         assertEquals(expResult, result);
        
