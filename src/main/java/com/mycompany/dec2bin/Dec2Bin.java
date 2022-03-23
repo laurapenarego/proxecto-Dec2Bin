@@ -10,7 +10,7 @@ package com.mycompany.dec2bin;
  * @author laura
  */
 public class Dec2Bin{
-    public static void main(String args[]){
+    public static void main(String[] args){
        int decimal = 252222;
        String binario = "";
        while ( decimal > 0 ) {
