@@ -4,19 +4,19 @@
  */
 package com.mycompany.dec2bin;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
+ * Probas  do método obterBinario da clase Dec2Bin
  * @author laura
  */
 public class Dec2BinTest {
     
+    /**
+     * Constructor por defecto
+     */
     public Dec2BinTest() {
     }
     
@@ -34,7 +34,11 @@ public class Dec2BinTest {
         assertEquals(expResult, result);
        
     }
-     @Test
+
+    /**
+     *test
+     */
+    @Test
     public void testObterBinario0() {
         System.out.println("obterBinario");
         int decimal = 0;
@@ -43,7 +47,11 @@ public class Dec2BinTest {
         assertEquals(expResult, result);
        
     }
-     @Test
+
+    /**
+     * test
+     */
+    @Test
     public void testObterBinario12() {
         System.out.println("obterBinario");
         int decimal = 12;

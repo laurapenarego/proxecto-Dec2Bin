@@ -6,16 +6,26 @@
 package com.mycompany.dec2bin;
 
 /**
- *
+ * Transforma un enteiro en binario
  * @author laura
  */
 public class Dec2Bin{
+
+    /**
+     * Chama ao método obTerBinario e immprime o resultado.
+     * @param args
+     */
     public static void main(String[] args){
        int decimal = 8;
        String binario = obterBinario(decimal);
        System.out.println(binario);   
     }
 
+    /**
+     * Obtén o valor binario a partir dun enteiro
+     * @param decimal dato de tipo enteiro 
+     * @return binario cadea de caracteres que representa o valor binario
+     */
     public static String obterBinario(int decimal) {
         String binario = "";
         while ( decimal > 0 ) {
