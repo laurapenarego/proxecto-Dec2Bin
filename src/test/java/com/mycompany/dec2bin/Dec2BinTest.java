@@ -47,5 +47,18 @@ public class Dec2BinTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
+
+    /**
+     * Test of obterBinario method, of class Dec2Bin.
+     */
+    @Test
+    public void testObterBinario() {
+        System.out.println("obterBinario");
+        int decimal = 2;
+        String expResult = "10";
+        String result = Dec2Bin.obterBinario(decimal);
+        assertEquals(expResult, result);
+       
+    }
     
 }
